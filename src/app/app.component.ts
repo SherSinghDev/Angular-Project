@@ -4,11 +4,13 @@ import { HeaderComponent } from './header/header.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CardContainerComponent } from './card-container/card-container.component';
 import { NgFor } from '@angular/common';
+import { FeatureComponent } from './feature/feature.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, CardContainerComponent,NgFor],
+  imports: [RouterOutlet, NavbarComponent, CardContainerComponent,NgFor,FeatureComponent,RouterModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

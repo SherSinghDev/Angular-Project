@@ -1,13 +1,10 @@
-<!-- <h1>hello world</h1>
-<p>{{title}}</p>
-<app-header text="hello world"></app-header> -->
-
-<app-navbar [company]="company"></app-navbar>
-
-<div class="container mt-5">
-    <div class="row g-4">
-        <app-card-container class="col-md-4" *ngFor="let item of data" [item]="item"></app-card-container>
+<main>
+    <app-navbar [company]="company"></app-navbar>
+    <div class="container mt-5">
+        <div class="row g-4 content">
+            <router-outlet></router-outlet>
+            <!-- <app-card-container class="col-md-4" *ngFor="let item of data" [item]="item"></app-card-container>
+            <app-feature></app-feature> -->
+        </div>
     </div>
-</div>
-<!-- <app-card-container *ngFor="let item of data"></app-card-container> -->
-<!-- <h1 *ngFor="let i for data">{{i}}</h1> -->
+</main>
